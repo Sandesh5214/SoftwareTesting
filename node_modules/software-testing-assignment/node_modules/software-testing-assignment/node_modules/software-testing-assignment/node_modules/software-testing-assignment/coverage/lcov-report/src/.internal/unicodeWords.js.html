@@ -1,0 +1,295 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/.internal/unicodeWords.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/.internal</a> unicodeWords.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/43</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/43</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** Used to compose unicode character classes. */
+const rsAstralRange = <span class="cstat-no" title="statement not covered" >'\\ud800-\\udfff'</span>
+const rsComboMarksRange = <span class="cstat-no" title="statement not covered" >'\\u0300-\\u036f'</span>
+const reComboHalfMarksRange = <span class="cstat-no" title="statement not covered" >'\\ufe20-\\ufe2f'</span>
+const rsComboSymbolsRange = <span class="cstat-no" title="statement not covered" >'\\u20d0-\\u20ff'</span>
+const rsComboMarksExtendedRange = <span class="cstat-no" title="statement not covered" >'\\u1ab0-\\u1aff'</span>
+const rsComboMarksSupplementRange = <span class="cstat-no" title="statement not covered" >'\\u1dc0-\\u1dff'</span>
+const rsComboRange = <span class="cstat-no" title="statement not covered" >rsComboMarksRange + reComboHalfMarksRange + rsComboSymbolsRange + rsComboMarksExtendedRange + rsComboMarksSupplementRange</span>
+const rsDingbatRange = <span class="cstat-no" title="statement not covered" >'\\u2700-\\u27bf'</span>
+const rsLowerRange = <span class="cstat-no" title="statement not covered" >'a-z\\xdf-\\xf6\\xf8-\\xff'</span>
+const rsMathOpRange = <span class="cstat-no" title="statement not covered" >'\\xac\\xb1\\xd7\\xf7'</span>
+const rsNonCharRange = <span class="cstat-no" title="statement not covered" >'\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf'</span>
+const rsPunctuationRange = <span class="cstat-no" title="statement not covered" >'\\u2000-\\u206f'</span>
+const rsSpaceRange = <span class="cstat-no" title="statement not covered" >' \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000'</span>
+const rsUpperRange = <span class="cstat-no" title="statement not covered" >'A-Z\\xc0-\\xd6\\xd8-\\xde'</span>
+const rsVarRange = <span class="cstat-no" title="statement not covered" >'\\ufe0e\\ufe0f'</span>
+const rsBreakRange = <span class="cstat-no" title="statement not covered" >rsMathOpRange + rsNonCharRange + rsPunctuationRange + rsSpaceRange</span>
+&nbsp;
+/** Used to compose unicode capture groups. */
+const rsApos = <span class="cstat-no" title="statement not covered" >"['\u2019]"</span>
+const rsBreak = <span class="cstat-no" title="statement not covered" >`[${rsBreakRange}]`</span>
+const rsCombo = <span class="cstat-no" title="statement not covered" >`[${rsComboRange}]`</span>
+const rsDigit = <span class="cstat-no" title="statement not covered" >'\\d'</span>
+const rsDingbat = <span class="cstat-no" title="statement not covered" >`[${rsDingbatRange}]`</span>
+const rsLower = <span class="cstat-no" title="statement not covered" >`[${rsLowerRange}]`</span>
+const rsMisc = <span class="cstat-no" title="statement not covered" >`[^${rsAstralRange}${rsBreakRange + rsDigit + rsDingbatRange + rsLowerRange + rsUpperRange}]`</span>
+const rsFitz = <span class="cstat-no" title="statement not covered" >'\\ud83c[\\udffb-\\udfff]'</span>
+const rsModifier = <span class="cstat-no" title="statement not covered" >`(?:${rsCombo}|${rsFitz})`</span>
+const rsNonAstral = <span class="cstat-no" title="statement not covered" >`[^${rsAstralRange}]`</span>
+const rsRegional = <span class="cstat-no" title="statement not covered" >'(?:\\ud83c[\\udde6-\\uddff]){2}'</span>
+const rsSurrPair = <span class="cstat-no" title="statement not covered" >'[\\ud800-\\udbff][\\udc00-\\udfff]'</span>
+const rsUpper = <span class="cstat-no" title="statement not covered" >`[${rsUpperRange}]`</span>
+const rsZWJ = <span class="cstat-no" title="statement not covered" >'\\u200d'</span>
+&nbsp;
+/** Used to compose unicode regexes. */
+const rsMiscLower = <span class="cstat-no" title="statement not covered" >`(?:${rsLower}|${rsMisc})`</span>
+const rsMiscUpper = <span class="cstat-no" title="statement not covered" >`(?:${rsUpper}|${rsMisc})`</span>
+const rsOptContrLower = <span class="cstat-no" title="statement not covered" >`(?:${rsApos}(?:d|ll|m|re|s|t|ve))?`</span>
+const rsOptContrUpper = <span class="cstat-no" title="statement not covered" >`(?:${rsApos}(?:D|LL|M|RE|S|T|VE))?`</span>
+const reOptMod = <span class="cstat-no" title="statement not covered" >`${rsModifier}?`</span>
+const rsOptVar = <span class="cstat-no" title="statement not covered" >`[${rsVarRange}]?`</span>
+const rsOptJoin = <span class="cstat-no" title="statement not covered" >`(?:${rsZWJ}(?:${[rsNonAstral, rsRegional, rsSurrPair].join('|')})${rsOptVar + reOptMod})*`</span>
+const rsOrdLower = <span class="cstat-no" title="statement not covered" >'\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])'</span>
+const rsOrdUpper = <span class="cstat-no" title="statement not covered" >'\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])'</span>
+const rsSeq = <span class="cstat-no" title="statement not covered" >rsOptVar + reOptMod + rsOptJoin</span>
+const rsEmoji = <span class="cstat-no" title="statement not covered" >`(?:${[rsDingbat, rsRegional, rsSurrPair].join('|')})${rsSeq}`</span>
+&nbsp;
+const reUnicodeWords = <span class="cstat-no" title="statement not covered" >RegExp([</span>
+  `${rsUpper}?${rsLower}+${rsOptContrLower}(?=${[rsBreak, rsUpper, '$'].join('|')})`,
+  `${rsMiscUpper}+${rsOptContrUpper}(?=${[rsBreak, rsUpper + rsMiscLower, '$'].join('|')})`,
+  `${rsUpper}?${rsMiscLower}+${rsOptContrLower}`,
+  `${rsUpper}+${rsOptContrUpper}`,
+  rsOrdUpper,
+  rsOrdLower,
+  `${rsDigit}+`,
+  rsEmoji
+].join('|'), 'g')
+&nbsp;
+/**
+ * Splits a Unicode `string` into an array of its words.
+ *
+ * @private
+ * @param {string} The string to inspect.
+ * @returns {Array} Returns the words of `string`.
+ */
+function <span class="fstat-no" title="function not covered" >unicodeWords(</span>string) {
+<span class="cstat-no" title="statement not covered" >  return string.match(reUnicodeWords)</span>
+}
+&nbsp;
+export default unicodeWords
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-11-10T14:39:57.221Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
