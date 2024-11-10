@@ -5,13 +5,26 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "nyc --reporter=lcov npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "chai": "^5.1.2",
+    "coveralls": "^3.1.1",
     "mocha": "^10.8.2",
+    "nyc": "^17.1.0",
     "software-testing-assignment": "file:"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "all": true
   }
 }

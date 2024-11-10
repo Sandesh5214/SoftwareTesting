@@ -33,3 +33,8 @@ jobs:
 
       - name: Run tests
         run: npm test --verbose
+
+      - name: Run coverage and send to Coveralls
+        run: npm run coverage
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
