@@ -34,7 +34,11 @@ jobs:
       - name: Run tests
         run: npm test --verbose
 
-      - name: Run coverage and send to Coveralls
-        run: npm run coverage
+      - name: Run tests and generate coverage report
+        run: npm run coverage 
+
+      - name: Upload coverage to Coveralls
         env:
-          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx coveralls < coverage/lcov.info

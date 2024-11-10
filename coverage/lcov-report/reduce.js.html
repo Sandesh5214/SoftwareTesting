@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>0/44</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>0/44</span>
             </div>
         
             
@@ -107,94 +107,94 @@
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import arrayReduce from './.internal/arrayReduce.js'
-import baseEach from './.internal/baseEach.js'
-import baseReduce from './.internal/baseReduce.js'
-&nbsp;
-/**
- * Reduces `collection` to a value which is the accumulated result of running
- * each element in `collection` thru `iteratee`, where each successive
- * invocation is supplied the return value of the previous. If `accumulator`
- * is not given, the first element of `collection` is used as the initial
- * value. The iteratee is invoked with four arguments:
- * (accumulator, value, index|key, collection).
- *
- * Many lodash methods are guarded to work as iteratees for methods like
- * `reduce`, `reduceRight`, and `transform`.
- *
- * The guarded methods are:
- * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,
- * and `sortBy`
- *
- * @since 0.1.0
- * @category Collection
- * @param {Array|Object} collection The collection to iterate over.
- * @param {Function} iteratee The function invoked per iteration.
- * @param {*} [accumulator] The initial value.
- * @returns {*} Returns the accumulated value.
- * @see reduceRight, transform
- * @example
- *
- * reduce([1, 2], (sum, n) =&gt; sum + n, 0)
- * // =&gt; 3
- *
- * reduce({ 'a': 1, 'b': 2, 'c': 1 }, (result, value, key) =&gt; {
- *   (result[value] || (result[value] = [])).push(key)
- *   return result
- * }, {})
- * // =&gt; { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)
- */
-function <span class="fstat-no" title="function not covered" >reduce(</span>collection, iteratee, accumulator) {
-  const func = <span class="cstat-no" title="statement not covered" >Array.isArray(collection) ? arrayReduce : baseReduce</span>
-  const initAccum = <span class="cstat-no" title="statement not covered" >arguments.length &lt; 3</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import arrayReduce from './.internal/arrayReduce.js'</span></span></span>
+<span class="cstat-no" title="statement not covered" >import baseEach from './.internal/baseEach.js'</span>
+<span class="cstat-no" title="statement not covered" >import baseReduce from './.internal/baseReduce.js'</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >/**</span>
+<span class="cstat-no" title="statement not covered" > * Reduces `collection` to a value which is the accumulated result of running</span>
+<span class="cstat-no" title="statement not covered" > * each element in `collection` thru `iteratee`, where each successive</span>
+<span class="cstat-no" title="statement not covered" > * invocation is supplied the return value of the previous. If `accumulator`</span>
+<span class="cstat-no" title="statement not covered" > * is not given, the first element of `collection` is used as the initial</span>
+<span class="cstat-no" title="statement not covered" > * value. The iteratee is invoked with four arguments:</span>
+<span class="cstat-no" title="statement not covered" > * (accumulator, value, index|key, collection).</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * Many lodash methods are guarded to work as iteratees for methods like</span>
+<span class="cstat-no" title="statement not covered" > * `reduce`, `reduceRight`, and `transform`.</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * The guarded methods are:</span>
+<span class="cstat-no" title="statement not covered" > * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `orderBy`,</span>
+<span class="cstat-no" title="statement not covered" > * and `sortBy`</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * @since 0.1.0</span>
+<span class="cstat-no" title="statement not covered" > * @category Collection</span>
+<span class="cstat-no" title="statement not covered" > * @param {Array|Object} collection The collection to iterate over.</span>
+<span class="cstat-no" title="statement not covered" > * @param {Function} iteratee The function invoked per iteration.</span>
+<span class="cstat-no" title="statement not covered" > * @param {*} [accumulator] The initial value.</span>
+<span class="cstat-no" title="statement not covered" > * @returns {*} Returns the accumulated value.</span>
+<span class="cstat-no" title="statement not covered" > * @see reduceRight, transform</span>
+<span class="cstat-no" title="statement not covered" > * @example</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * reduce([1, 2], (sum, n) =&gt; sum + n, 0)</span>
+<span class="cstat-no" title="statement not covered" > * // =&gt; 3</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * reduce({ 'a': 1, 'b': 2, 'c': 1 }, (result, value, key) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" > *   (result[value] || (result[value] = [])).push(key)</span>
+<span class="cstat-no" title="statement not covered" > *   return result</span>
+<span class="cstat-no" title="statement not covered" > * }, {})</span>
+<span class="cstat-no" title="statement not covered" > * // =&gt; { '1': ['a', 'c'], '2': ['b'] } (iteration order is not guaranteed)</span>
+<span class="cstat-no" title="statement not covered" > */</span>
+<span class="cstat-no" title="statement not covered" >function reduce(collection, iteratee, accumulator) {</span>
+<span class="cstat-no" title="statement not covered" >  const func = Array.isArray(collection) ? arrayReduce : baseReduce</span>
+<span class="cstat-no" title="statement not covered" >  const initAccum = arguments.length &lt; 3</span>
 <span class="cstat-no" title="statement not covered" >  return func(collection, iteratee, accumulator, initAccum, baseEach)</span>
-}
-&nbsp;
-export default reduce
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >export default reduce</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -202,7 +202,7 @@ export default reduce
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-11-10T14:25:29.469Z
+                at 2024-11-10T19:12:06.310Z
             </div>
         <script src="prettify.js"></script>
         <script>

@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/33</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>0/1</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/33</span>
             </div>
         
             
@@ -96,72 +96,72 @@
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import slice from './slice.js'
-import toInteger from './toInteger.js'
-&nbsp;
-/**
- * Creates a slice of `array` with `n` elements dropped from the beginning.
- *
- * @since 0.5.0
- * @category Array
- * @param {Array} array The array to query.
- * @param {number} [n=1] The number of elements to drop.
- * @returns {Array} Returns the slice of `array`.
- * @example
- *
- * drop([1, 2, 3])
- * // =&gt; [2, 3]
- *
- * drop([1, 2, 3], 2)
- * // =&gt; [3]
- *
- * drop([1, 2, 3], 5)
- * // =&gt; []
- *
- * drop([1, 2, 3], 0)
- * // =&gt; [1, 2, 3]
- */
-function <span class="fstat-no" title="function not covered" >drop(</span>array, n=<span class="branch-0 cbranch-no" title="branch not covered" >1)</span> {
-  const length = <span class="cstat-no" title="statement not covered" >array == null ? 0 : array.length</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import slice from './slice.js'</span></span></span>
+<span class="cstat-no" title="statement not covered" >import toInteger from './toInteger.js'</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >/**</span>
+<span class="cstat-no" title="statement not covered" > * Creates a slice of `array` with `n` elements dropped from the beginning.</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * @since 0.5.0</span>
+<span class="cstat-no" title="statement not covered" > * @category Array</span>
+<span class="cstat-no" title="statement not covered" > * @param {Array} array The array to query.</span>
+<span class="cstat-no" title="statement not covered" > * @param {number} [n=1] The number of elements to drop.</span>
+<span class="cstat-no" title="statement not covered" > * @returns {Array} Returns the slice of `array`.</span>
+<span class="cstat-no" title="statement not covered" > * @example</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * drop([1, 2, 3])</span>
+<span class="cstat-no" title="statement not covered" > * // =&gt; [2, 3]</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * drop([1, 2, 3], 2)</span>
+<span class="cstat-no" title="statement not covered" > * // =&gt; [3]</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * drop([1, 2, 3], 5)</span>
+<span class="cstat-no" title="statement not covered" > * // =&gt; []</span>
+<span class="cstat-no" title="statement not covered" > *</span>
+<span class="cstat-no" title="statement not covered" > * drop([1, 2, 3], 0)</span>
+<span class="cstat-no" title="statement not covered" > * // =&gt; [1, 2, 3]</span>
+<span class="cstat-no" title="statement not covered" > */</span>
+<span class="cstat-no" title="statement not covered" >function drop(array, n=1) {</span>
+<span class="cstat-no" title="statement not covered" >  const length = array == null ? 0 : array.length</span>
 <span class="cstat-no" title="statement not covered" >  return length</span>
-    ? slice(array, n &lt; 0 ? 0 : toInteger(n), length)
-    : []
-}
-&nbsp;
-export default drop
+<span class="cstat-no" title="statement not covered" >    ? slice(array, n &lt; 0 ? 0 : toInteger(n), length)</span>
+<span class="cstat-no" title="statement not covered" >    : []</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >export default drop</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -169,7 +169,7 @@ export default drop
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-11-10T14:25:29.469Z
+                at 2024-11-10T19:12:06.310Z
             </div>
         <script src="prettify.js"></script>
         <script>
