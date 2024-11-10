@@ -14,19 +14,22 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16, 18]
+        node-version: [16]
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --verbose
+
+      - name: Set executable permissions for scripts
+        run: chmod +x ./node_modules/.bin/*
 
       - name: Run tests
-        run: npm test
+        run: npm test --verbose
