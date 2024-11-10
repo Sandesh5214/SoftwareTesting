@@ -34,11 +34,25 @@ jobs:
       - name: Run tests
         run: npm test --verbose
 
-      - name: Run tests and generate coverage report
-        run: npm run coverage 
+      - name: Run tests with coverage
+        run: npm run coverage
 
-      - name: Upload coverage to Coveralls
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npx coveralls < coverage/lcov.info
+      # Upload coverage to Coveralls
+      - name: Upload to Coveralls
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          flag-name: "ubuntu-node-${{ matrix.node-version }}"
+          parallel: true
+
+  finish:
+    # Wait for all parallel jobs to complete
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Finalize Coveralls Report
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
