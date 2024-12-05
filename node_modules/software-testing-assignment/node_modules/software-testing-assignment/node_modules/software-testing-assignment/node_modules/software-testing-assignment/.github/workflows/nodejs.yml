@@ -31,9 +31,6 @@ jobs:
       - name: Set executable permissions for scripts
         run: chmod +x ./node_modules/.bin/*
 
-      - name: Run tests
-        run: npm test --verbose
-
       - name: Run tests with coverage
         run: npm run coverage
 
