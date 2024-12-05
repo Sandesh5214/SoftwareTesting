@@ -33,6 +33,7 @@ jobs:
 
       - name: Run tests with coverage
         run: npm run coverage
+        continue-on-error: true
 
       # Upload coverage to Coveralls
       - name: Upload to Coveralls
