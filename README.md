@@ -4,7 +4,8 @@ This repository contains the test conducted for the utility library as per the i
 # Coverage: 
 [![Coverage Status](https://coveralls.io/repos/github/Sandesh5214/SoftwareTesting/badge.svg)](https://coveralls.io/github/Sandesh5214/SoftwareTesting)
 
-# Installing Locally
+# Installing Locally 
+
 
 After cloning the project from the git repository we can run the tests and generate the coverage report locally by executing the following commands serially. Node.js and npm are required to run the tests locally.
 •	npm install : This command installs all the dependencies required for the project
